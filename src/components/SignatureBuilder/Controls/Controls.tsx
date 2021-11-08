@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import { useControlValue } from '../../Contexts/ControlContext'
 import { CurrentControls } from './CurrentControls'
 import { InputRadio } from '../../Common/InputRadio'
+import { InputSelect } from '../../Common/InputSelect'
+
 
 export const Controls = () => {
 	const { data, changeControl } = useControlValue()
-	const controlTypes = ['templates', 'info', 'styles', 'collection']
+	const controlTypes = [ 'Contact Info']
 
 	return (
 		<StyledControlsContainer>
@@ -32,7 +34,7 @@ const StyledControlsContainer = styled.article`
 	flex-direction: column;
 	padding: 2rem 2.5rem 2rem 2rem;
 	color: #e8e8e8;
-	background-color: #504a65;
+	background-color: #002e6b;
 	overflow-y: scroll;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
