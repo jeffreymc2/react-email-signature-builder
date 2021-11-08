@@ -1,13 +1,15 @@
 export const inputList = {
-	default: [
+
+	logo: [
 		{
-			label: 'Portrait URL',
-			name: 'portrait',
-		},
-		{
-			label: 'Logo URL',
+			label: 'Logo Selector',
 			name: 'logo',
 		},
+		
+		
+	],
+	default: [
+		
 		{
 			label: 'First name',
 			name: 'firstName',
@@ -24,14 +26,8 @@ export const inputList = {
 			label: 'Department',
 			name: 'department',
 		},
-		{
-			label: 'Company name',
-			name: 'companyName',
-		},
-		{
-			label: 'Website URL',
-			name: 'websiteUrl',
-		},
+		
+		
 	],
 	contact: [
 		{
@@ -49,6 +45,10 @@ export const inputList = {
 		{
 			label: 'Address',
 			name: 'address',
+		},
+		{
+			label: 'Address2',
+			name: 'address2',
 		},
 	],
 	social: [

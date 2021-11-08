@@ -10,8 +10,7 @@ export const TemplateOne = () => {
 			cellSpacing="0"
 			style={{
 				verticalAlign: '-webkit-baseline-middle',
-				fontSize: 'medium',
-				fontFamily: 'Arial',
+				fontFamily: 'sans-serif',
 			}}
 		>
 			<tbody>
@@ -22,8 +21,8 @@ export const TemplateOne = () => {
 							cellSpacing="0"
 							style={{
 								verticalAlign: '-webkit-baseline-middle',
-								fontSize: 'medium',
-								fontFamily: 'Arial',
+								fontFamily: 'sans-serif',
+								color: '#002e6b'
 							}}
 						>
 							<tbody>
@@ -32,38 +31,17 @@ export const TemplateOne = () => {
 										<img
 											width="130"
 											src={
-												data.portrait
-													? data.portrait
+												data.logo
+													? data.logo
 													: 'https://api.adorable.io/avatars/face/eyes1/nose5/mouth6/504A65'
 											}
-											alt="Portrait"
+											alt="Logo"
 											role="presentation"
-											style={{ maxWidth: '130px', display: 'block' }}
+											style={{ maxWidth: '130px', display: 'inline-block' }}
 										/>
 									</td>
 								</tr>
-								{ data.logo && (
-									<React.Fragment>
-										<tr>
-											<td height="24"></td>
-										</tr>
-										<tr>
-											<td style={{ textAlign: 'center' }}>
-												<img
-													width="130"
-													src={
-														data.logo
-															? data.logo
-															: 'https://pngimage.net/wp-content/uploads/2018/06/logo-placeholder-png-3.png'
-													}
-													alt="Logo"
-													role="presentation"
-													style={{ maxWidth: '130px', display: 'block' }}
-												/>
-											</td>
-										</tr>
-									</React.Fragment>
-								)}
+								
 								<tr>
 									<td height="24"></td>
 								</tr>
@@ -78,8 +56,7 @@ export const TemplateOne = () => {
 												cellSpacing="0"
 												style={{
 													verticalAlign: '-webkit-baseline-middle',
-													fontSize: 'medium',
-													fontFamily: 'Arial',
+													fontFamily: 'sans-serif',
 													display: 'inline-block',
 												}}
 											>
@@ -202,25 +179,23 @@ export const TemplateOne = () => {
 							</tbody>
 						</table>
 					</td>
-					<td width="46"></td>
+					<td width="16"></td>
 					<td style={{ padding: '0px', verticalAlign: 'middle' }}>
 						<h3
-							color="#000000"
-							style={{ margin: '0px', fontSize: '18px', color: 'rgb(0, 0, 0)' }}
+							color="#76777a"
+							style={{ margin: '0px', fontSize: '14px', color: '#76777a', fontWeight: '700' }}
 						>
-							<span>{data.firstName ? data.firstName : 'John'}</span>
+							<span>{data.firstName ? data.firstName : 'First &'}</span>
 							<span>&nbsp;</span>
-							<span>{data.lastName ? data.lastName : 'Smith'}</span>
+							<span>{data.lastName ? data.lastName : 'Last Name'}</span>
 						</h3>
 						{data.jobTitle && (
 							<p
-								color="#000000"
-								fontSize="medium"
+								color="#002e6b"
 								style={{
 									margin: '0px',
-									color: 'rgb(0, 0, 0)',
+									color: '#002e6b',
 									fontSize: '14px',
-									lineHeight: '22px',
 								}}
 							>
 								<span>{data.jobTitle}</span>
@@ -228,20 +203,26 @@ export const TemplateOne = () => {
 						)}
 						{(data.department || data.companyName) && (
 							<p
-								color="#000000"
-								fontSize="medium"
+								color="#002e6b"
 								style={{
 									margin: '0px',
-									fontWeight: '500',
-									color: 'rgb(0, 0, 0)',
+									fontWeight: '900',
+									color: '#002e6b',
 									fontSize: '14px',
-									lineHeight: '22px',
 								}}
 							>
-								<span>{data.department}</span>
-								{data.department &&
-									(data.companyName && <span>&nbsp;|&nbsp;</span>)}
 								<span>{data.companyName}</span>
+								{data.companyName &&
+									(data.department && <span>&nbsp;</span>)}
+								<span 
+								style={{
+									margin: '0px',
+									fontWeight: '700',
+									color: '#002e6b',
+									fontSize: '14px',
+								}}
+								
+								>{data.department}</span>
 							</p>
 						)}
 						<table
@@ -249,14 +230,13 @@ export const TemplateOne = () => {
 							cellSpacing="0"
 							style={{
 								verticalAlign: '-webkit-baseline-middle',
-								fontSize: 'medium',
-								fontFamily: 'Arial',
+								fontFamily: 'sans-serif',
 								width: '100%',
 							}}
 						>
 							<tbody>
 								<tr>
-									<td height="24"></td>
+									<td height="14"></td>
 								</tr>
 								<tr>
 									<td
@@ -268,6 +248,7 @@ export const TemplateOne = () => {
 											borderBottom: `1px solid ${data.accentColor}`,
 											borderLeft: 'none',
 											display: 'block',
+											color: '#002e6b'
 										}}
 									></td>
 								</tr>
@@ -286,21 +267,21 @@ export const TemplateOne = () => {
 								cellSpacing="0"
 								style={{
 									verticalAlign: '-webkit-baseline-middle',
-									fontSize: 'medium',
-									fontFamily: 'Arial',
+									fontFamily: 'sans-serif',
+									textDecoration: 'none',
+									color: '#000'
 								}}
 							>
 								<tbody>
 									{(data.officePhone || data.mobilePhone) && (
-										<tr height="25" style={{ verticalAlign: 'middle' }}>
+										<tr height="10" style={{ verticalAlign: 'middle' }}>
 											<td width="30" style={{ verticalAlign: 'middle' }}>
 												<table
 													cellPadding="0"
 													cellSpacing="0"
 													style={{
 														verticalAlign: '-webkit-baseline-middle',
-														fontSize: 'medium',
-														fontFamily: 'Arial',
+														fontFamily: 'sans-serif',
 													}}
 												>
 													<tbody>
@@ -359,15 +340,14 @@ export const TemplateOne = () => {
 										</tr>
 									)}
 									{data.emailAddress && (
-										<tr height="25" style={{ verticalAlign: 'middle' }}>
+										<tr height="10" style={{ verticalAlign: 'middle' }}>
 											<td width="30" style={{ verticalAlign: 'middle' }}>
 												<table
 													cellPadding="0"
 													cellSpacing="0"
 													style={{
 														verticalAlign: '-webkit-baseline-middle',
-														fontSize: 'medium',
-														fontFamily: 'Arial',
+														fontFamily: 'sans-serif',
 													}}
 												>
 													<tbody>
@@ -413,7 +393,7 @@ export const TemplateOne = () => {
 										</tr>
 									)}
 									{data.websiteUrl && (
-										<tr height="25" style={{ verticalAlign: 'middle' }}>
+										<tr height="10" style={{ verticalAlign: 'middle' }}>
 											<td width="30" style={{ verticalAlign: 'middle' }}>
 												<table
 													cellPadding="0"
@@ -421,7 +401,7 @@ export const TemplateOne = () => {
 													style={{
 														verticalAlign: '-webkit-baseline-middle',
 														fontSize: 'medium',
-														fontFamily: 'Arial',
+														fontFamily: 'sans-serif',
 													}}
 												>
 													<tbody>
@@ -467,7 +447,7 @@ export const TemplateOne = () => {
 										</tr>
 									)}
 									{data.address && (
-										<tr height="25" style={{ verticalAlign: 'middle' }}>
+										<tr height="10" style={{ verticalAlign: 'middle' }}>
 											<td width="30" style={{ verticalAlign: 'middle' }}>
 												<table
 													cellPadding="0"
@@ -475,7 +455,7 @@ export const TemplateOne = () => {
 													style={{
 														verticalAlign: '-webkit-baseline-middle',
 														fontSize: 'medium',
-														fontFamily: 'Arial',
+														fontFamily: 'sans-serif',
 													}}
 												>
 													<tbody>
@@ -511,6 +491,45 @@ export const TemplateOne = () => {
 													style={{ fontSize: '12px', color: 'rgb(0, 0, 0)' }}
 												>
 													<span>{data.address}</span>
+												</span>
+											</td>
+										</tr>
+									)}
+									{data.address2 && (
+										<tr height="10" style={{ verticalAlign: 'middle' }}>
+											<td width="30" style={{ verticalAlign: 'middle' }}>
+												<table
+													cellPadding="0"
+													cellSpacing="0"
+													style={{
+														verticalAlign: '-webkit-baseline-middle',
+														fontFamily: 'sans-serif',
+													}}
+												>
+													<tbody>
+														<tr>
+															<td style={{ verticalAlign: 'bottom' }}>
+																<span
+																	color={data.accentColor}
+																	style={{
+																		display: 'block',
+																		backgroundColor: data.accentColor,
+																		width: '11px',
+																	}}
+																>
+																	
+																</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td style={{ padding: '0px' }}>
+												<span
+													color="#000000"
+													style={{ fontSize: '12px', color: 'rgb(0, 0, 0)' }}
+												>
+													<span>{data.address2}</span>
 												</span>
 											</td>
 										</tr>

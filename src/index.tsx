@@ -7,7 +7,7 @@ const App = () => {
 	const GlobalStyle = createGlobalStyle`
 		body {
 			margin: 0;
-			font-family: 'Roboto Mono', monospace;
+			font-family: sans-serif, monospace;
 		}
 		@keyframes flipdown {
 			0% {

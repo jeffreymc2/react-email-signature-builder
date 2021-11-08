@@ -24,7 +24,7 @@ export const ControlContext = createContext<Partial<ControlContextProps>>({})
 
 export const ControlProvider = ({ children }: ControlProviderProps) => {
 	const [state, setState] = useState<InitialStateProps>({
-		control: 'templates',
+		control: 'Contact Info',
 		template: 'template1',
 		collection: [],
 	})

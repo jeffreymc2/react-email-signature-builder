@@ -5,14 +5,16 @@ import { InputText } from '../../Common/InputText'
 import { Accordion } from '../../Common/Accordion'
 import { inputList } from '../../Common/InputList'
 import { Description } from '../../Common/Description'
+import { Logo } from '../../Common/Logo'
+
 
 export const Info = () => {
 	const { data, updateInfo } = useInfoValue()
 
 	return (
 		<StyledInfo>
-			<Description>Enter the info you'd like to be displayed in your signature</Description>
-			{inputList.default.map(input => (
+			<Logo>Select your division logo from dropdown</Logo>
+			{inputList.logo.map(input => (
 				<InputText
 					label={input.label}
 					name={input.name}
@@ -21,6 +23,17 @@ export const Info = () => {
 					key={input.name}
 				/>
 			))}
+
+		<Description>Enter the info you'd like to be displayed in your signature</Description>
+					{inputList.default.map(input => (
+						<InputText
+							label={input.label}
+							name={input.name}
+							value={data[input.name]}
+							onBlur={updateInfo}
+							key={input.name}
+						/>
+					))}
 			<Accordion title="Contact Info">
 				{inputList.contact.map(input => (
 					<InputText

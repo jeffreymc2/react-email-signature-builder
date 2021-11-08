@@ -23,6 +23,7 @@ const StyledMainContainer = styled.main`
 	height: 100vh;
 	background-color: #fff;
 	margin: 0 auto;
+	fon-family: sans-serif;
 	display: grid;
 	grid-template-columns: 415px 3fr;
 	grid-template-rows: 1fr;

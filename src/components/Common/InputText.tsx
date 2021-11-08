@@ -21,6 +21,7 @@ export const InputText = ({ value, onBlur, name, label }: InputTextProps) => (
 		/>
 		<Label htmlFor={name}>{label}</Label>
 	</StyledInputText>
+	
 )
 
 InputText.propTypes = {
@@ -30,21 +31,25 @@ InputText.propTypes = {
 	label: PropTypes.string.isRequired,
 }
 
+
+
 const StyledInputText = styled.div`
 	position: relative;
+	font-size: 1.0rem;
 `
 
 const Input = styled.input`
 	width: 100%;
-	font-family: 'Roboto Mono', monospace;
-	height: 30px;
+	font-family: sans-serif;
+	height: 20px;
 	padding: 0.5rem 0 0.5rem 0.5rem;
-	margin-bottom: 3rem;
-	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: .75rem;
 	background: transparent;
-	color: #e8e8e8;
+	color: #ffffff;
 	border: none;
-	border-bottom: 2px solid #e8e8e8;
+	border-bottom: 2px solid #ffffff;
 	box-shadow: none;
 	&:focus {
 		outline: none;
@@ -54,7 +59,7 @@ const Input = styled.input`
 	}
 	&:focus + label,
 	&:valid + label {
-		top: -0.75rem;
+		top: -0.05rem;
 		transform: scale(0.8);
 		left: 0;
 	}
@@ -62,8 +67,8 @@ const Input = styled.input`
 
 const Label = styled.label`
 	position: absolute;
-	top: 1rem;
-	left: 0.5rem;
+	top: .5rem;
+	left: 0.2rem;
 	transition: all 0.2s ease-in-out;
 	pointer-events: none;
 	opacity: 0.5;

@@ -9,7 +9,7 @@ export interface InputRadioProps {
 }
 
 export const InputRadio = ({ name, checked, onChange, label }: InputRadioProps) => (
-	<StyledInputRadio>
+	<StyledRadio>
 		<input
 			type="radio"
 			name={name}
@@ -19,10 +19,10 @@ export const InputRadio = ({ name, checked, onChange, label }: InputRadioProps) 
 			id={name}
 		/>
 		<label htmlFor={name}>{label}</label>
-	</StyledInputRadio>
+	</StyledRadio>
 )
 
-const StyledInputRadio = styled.div`
+const StyledRadio = styled.div`
 	display: flex;
 	margin-bottom: 0.5rem;
 	& > input {

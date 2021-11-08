@@ -10,7 +10,7 @@ export const CurrentControls = () => {
 	let currentControl: ReactElement
 	if (data.control === 'templates') {
 		currentControl = <Templates />
-	} else if (data.control === 'info') {
+	} else if (data.control === 'Contact Info') {
 		currentControl = <Info />
 	} else if (data.control === 'styles') {
 		currentControl = <Styles />

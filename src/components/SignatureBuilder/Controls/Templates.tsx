@@ -11,10 +11,7 @@ export const Templates = () => {
 			label: 'Template One',
 			name: 'template1',
 		},
-		{
-			label: 'Template Two',
-			name: 'template2',
-		},
+		
 	]
 
 	return (
