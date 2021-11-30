@@ -4,9 +4,9 @@ import styled from 'styled-components'
 export const Header = () => {
 	return(
 		<StyledHeader>
-			<img width="200" height="90"  alt="Logo" src="https://perfectgame.s3.amazonaws.com/1_Perfect_Game_Stacked_Logo_Blue_01_924edea548.png"></img>
+			<img width="200"  alt="Logo" src="https://perfectgame.s3.amazonaws.com/1_Perfect_Game_Stacked_Logo_Blue_01_924edea548.png"></img>
 			<h3>Email Signature Generator</h3>
-			<p>Use the panel on the left to customize your signature, then click the button below to copy the HTML</p>
+			<p>Use the panel on the left to customize your signature, then click the button below to copy the HTML or select and copy the email signature to paste into Outlook.</p>
 		</StyledHeader>
 	)
 }
