@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.tsx",
-  "homepage": "https://react-email-signature-builder.vercel.app",
+  "homepage": "https://perfect-game-email-signature-builder.vercel.app",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
