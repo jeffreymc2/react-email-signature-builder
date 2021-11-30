@@ -2,7 +2,7 @@
   "name": "signature-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "homepage": "https://react-email-signature-builder.vercel.app/react-email-signature-builder",
   "scripts": {
     "start": "react-scripts start",
