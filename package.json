@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://codyrose.co/react-email-signature-builder",
+  "homepage": "https://react-email-signature-builder.vercel.app/react-email-signature-builder",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
