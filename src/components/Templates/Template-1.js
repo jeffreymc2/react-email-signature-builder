@@ -311,13 +311,13 @@ export const TemplateOne = () => {
 													</tbody>
 												</table>
 											</td>
-											<td style={{ padding: '0px', color: 'rgb(0, 0, 0)' }}>
+											<td style={{ padding: '0px', color: '#76777a' }}>
 												<a
 													href={`tel:${data.officePhone}`}
-													color="#000000"
+													color="#76777a"
 													style={{
 														textDecoration: 'none',
-														color: 'rgb(0, 0, 0)',
+														color: '#76777a',
 														fontSize: '12px',
 													}}
 												>
@@ -327,10 +327,10 @@ export const TemplateOne = () => {
 													(data.mobilePhone && <span>&nbsp;|&nbsp;</span>)}
 												<a
 													href={`tel:${data.mobilePhone}`}
-													color="#000000"
+													color="#76777a"
 													style={{
 														textDecoration: 'none',
-														color: 'rgb(0, 0, 0)',
+														color: '#76777a',
 														fontSize: '12px',
 													}}
 												>
@@ -380,10 +380,10 @@ export const TemplateOne = () => {
 											<td style={{ padding: '0px' }}>
 												<a
 													href={`mailto:${data.emailAddress}`}
-													color="#000000"
+													color="#76777a"
 													style={{
 														textDecoration: 'none',
-														color: 'rgb(0, 0, 0)',
+														color: '#76777a',
 														fontSize: '12px',
 													}}
 												>
@@ -434,10 +434,10 @@ export const TemplateOne = () => {
 											<td style={{ padding: '0px' }}>
 												<a
 													href={`https://${data.websiteUrl}`}
-													color="#000000"
+													color="#76777a"
 													style={{
 														textDecoration: 'none',
-														color: 'rgb(0, 0, 0)',
+														color: '#76777a',
 														fontSize: '12px',
 													}}
 												>
@@ -487,8 +487,8 @@ export const TemplateOne = () => {
 											</td>
 											<td style={{ padding: '0px' }}>
 												<span
-													color="#000000"
-													style={{ fontSize: '12px', color: 'rgb(0, 0, 0)' }}
+													color="#76777a"
+													style={{ fontSize: '12px', color: '#76777a' }}
 												>
 													<span>{data.address}</span>
 												</span>
@@ -526,8 +526,8 @@ export const TemplateOne = () => {
 											</td>
 											<td style={{ padding: '0px' }}>
 												<span
-													color="#000000"
-													style={{ fontSize: '12px', color: 'rgb(0, 0, 0)' }}
+													color="#76777a"
+													style={{ fontSize: '12px', color: '#76777a' }}
 												>
 													<span>{data.address2}</span>
 												</span>
