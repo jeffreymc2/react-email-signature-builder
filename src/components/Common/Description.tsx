@@ -14,7 +14,7 @@ export const Description = ({ children }: DescriptionProps) => {
 }
 
 const StyledDescription = styled.p`
-	font-size: 0.575rem;
+	font-size: 1rem;
 	margin-bottom: 1.5rem;
-	text-align: center;
+	text-align: left;
 `

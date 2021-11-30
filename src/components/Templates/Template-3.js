@@ -1,7 +1,7 @@
 import React from 'react'
 import { useInfoValue } from '../Contexts/InfoContext'
 
-export const TemplateTwo = () => {
+export const TemplateThree = () => {
 	const { data } = useInfoValue()
 
 	return (
@@ -31,8 +31,8 @@ export const TemplateTwo = () => {
 										<img
 											width="130"
 											src={
-												data.logo2
-													? data.logo2
+												data.logo3
+													? data.logo3
 													: 'https://api.adorable.io/avatars/face/eyes1/nose5/mouth6/504A65'
 											}
 											alt="Logo"
@@ -201,7 +201,7 @@ export const TemplateTwo = () => {
 								<span>{data.jobTitle}</span>
 							</p>
 						)}
-						{(data.department2 || data.companyName) && (
+						{(data.department3 || data.companyName) && (
 							<p
 								color="#002e6b"
 								style={{
@@ -213,7 +213,7 @@ export const TemplateTwo = () => {
 							>
 								<span>{data.companyName}</span>
 								{data.companyName &&
-									(data.department2 && <span>&nbsp;</span>)}
+									(data.department3 && <span>&nbsp;</span>)}
 								<span 
 								style={{
 									margin: '0px',
@@ -222,7 +222,7 @@ export const TemplateTwo = () => {
 									fontSize: '14px',
 								}}
 								
-								>{data.department2}</span>
+								>{data.department3}</span>
 							</p>
 						)}
 						<table

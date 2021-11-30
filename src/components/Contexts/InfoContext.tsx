@@ -16,11 +16,16 @@ export const InfoContext = createContext<Partial<InfoContextProps>>({})
 
 export const InfoProvider = ({ children }: InfoProviderProps) => {
 	const [state, setState] = useState({
-		logo:'https://perfectgame.s3.amazonaws.com/PG_Stacked2019d_2_8b00e12b06.png',
+		logo1:'https://perfectgame.s3.amazonaws.com/1_Perfect_Game_Stacked_Logo_Blue_01_a2affa3832.png',
+		logo2:'https://perfectgame.s3.amazonaws.com/pg_baseball_cfe0966728.png',
+		logo3:'https://perfectgame.s3.amazonaws.com/PG_Softball_2_33a241a3c0_cf1ef94b29_6ef9432bfe.png',
+
 		firstName: '',
 		lastName: '',
 		jobTitle: '',
-		department: '',
+		department1: '',
+		department2: 'Baseball',
+		department3: 'Softball',
 		companyName: 'Perfect Game',
 		officePhone: '',
 		mobilePhone: '',

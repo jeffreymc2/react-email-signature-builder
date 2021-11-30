@@ -1,13 +1,13 @@
 export const inputList = {
 
-	logo: [
-		{
-			label: 'Logo Selector',
-			name: 'logo',
-		},
+	// logo: [
+	// 	{
+	// 		label: 'Logo Selector',
+	// 		name: 'logo',
+	// 	},
 		
 		
-	],
+	// ],
 	default: [
 		
 		{
@@ -22,10 +22,10 @@ export const inputList = {
 			label: 'Job title',
 			name: 'jobTitle',
 		},
-		{
-			label: 'Department',
-			name: 'department',
-		},
+		// {
+		// 	label: 'Department',
+		// 	name: 'department',
+		// },
 		
 		
 	],

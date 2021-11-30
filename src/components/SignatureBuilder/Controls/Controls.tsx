@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { useControlValue } from '../../Contexts/ControlContext'
 import { CurrentControls } from './CurrentControls'
 import { InputRadio } from '../../Common/InputRadio'
-import { InputSelect } from '../../Common/InputSelect'
+// import { InputSelect } from '../../Common/InputSelect'
 
 
 export const Controls = () => {
 	const { data, changeControl } = useControlValue()
-	const controlTypes = [ 'Contact Info']
+	const controlTypes = [ 'Contact Info', 'Email Templates']
 
 	return (
 		<StyledControlsContainer>
@@ -21,6 +21,8 @@ export const Controls = () => {
 						onChange={changeControl}
 						key={controlName}
 					/>
+
+					
 				))}
 			</StyledControls>
 			<CurrentControls />

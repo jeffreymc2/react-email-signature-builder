@@ -31,8 +31,8 @@ export const TemplateOne = () => {
 										<img
 											width="130"
 											src={
-												data.logo
-													? data.logo
+												data.logo1
+													? data.logo1
 													: 'https://api.adorable.io/avatars/face/eyes1/nose5/mouth6/504A65'
 											}
 											alt="Logo"

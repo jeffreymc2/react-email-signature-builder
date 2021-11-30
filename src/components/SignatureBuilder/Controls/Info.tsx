@@ -5,7 +5,7 @@ import { InputText } from '../../Common/InputText'
 import { Accordion } from '../../Common/Accordion'
 import { inputList } from '../../Common/InputList'
 import { Description } from '../../Common/Description'
-import { Logo } from '../../Common/Logo'
+// import { Logo } from '../../Common/Logo'
 
 
 export const Info = () => {
@@ -13,7 +13,7 @@ export const Info = () => {
 
 	return (
 		<StyledInfo>
-			<Logo>Select your division logo from dropdown</Logo>
+			{/* <Logo>Select your division logo from dropdown</Logo>
 			{inputList.logo.map(input => (
 				<InputText
 					label={input.label}
@@ -22,7 +22,7 @@ export const Info = () => {
 					onBlur={updateInfo}
 					key={input.name}
 				/>
-			))}
+			))} */}
 
 		<Description>Enter the info you'd like to be displayed in your signature</Description>
 					{inputList.default.map(input => (

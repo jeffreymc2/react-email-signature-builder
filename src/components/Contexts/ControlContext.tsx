@@ -4,8 +4,8 @@ import { copyToClipboard } from '../Common/CopyToClipboard'
 
 interface ControlContextProps {
 	data: any,
-	changeControl: unknown,
 	changeTemplate: unknown,
+	changeControl: unknown,
 	saveToCollection: any,
 	copyItem: any,
 }
@@ -15,8 +15,8 @@ interface ControlProviderProps {
 }
 
 interface InitialStateProps {
-	control: string,
 	template: string,
+	control: string,
 	collection: string[],
 }
 
@@ -24,24 +24,25 @@ export const ControlContext = createContext<Partial<ControlContextProps>>({})
 
 export const ControlProvider = ({ children }: ControlProviderProps) => {
 	const [state, setState] = useState<InitialStateProps>({
+		template: 'template1', 
 		control: 'Contact Info',
-		template: 'template1',
 		collection: [],
 	})
 	return (
 		<ControlContext.Provider
 			value={{
 				data: state!,
-				changeControl: (e: FormEvent<HTMLInputElement>) => {
-					setState({
-						...state,
-						control: e.currentTarget.value
-					})
-				},
+				
 				changeTemplate: (e: FormEvent<HTMLInputElement>) => {
 					setState({
 						...state,
 						template: e.currentTarget.value
+					})
+				},
+				changeControl: (e: FormEvent<HTMLInputElement>) => {
+					setState({
+						...state,
+						control: e.currentTarget.value
 					})
 				},
 				saveToCollection: (collectionItem: any) => {

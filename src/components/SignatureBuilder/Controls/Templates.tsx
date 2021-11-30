@@ -8,8 +8,16 @@ export const Templates = () => {
 	const { data, changeTemplate } = useControlValue()
 	const templateTypes = [
 		{
-			label: 'Template One',
+			label: 'Perfect Game Primary Logo',
 			name: 'template1',
+		},
+		{
+			label: 'PG Baseball Logo ',
+			name: 'template2',
+		},
+		{
+			label: 'PG Softball',
+			name: 'template3',
 		},
 		
 	]

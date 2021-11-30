@@ -20,8 +20,8 @@ export const ButtonSecondary = ({ onClick, children }: ButtonProps) => (
 const StyledButton = styled.button<ButtonProps>`
 	outline: none;
 	border: 1px solid transparent;
-	background-color: ${props => (props.secondary ? '#fff' : '#504a65')};
-	color: ${props => (props.secondary ? '#504a65' : '#fff')};
+	background-color: ${props => (props.secondary ? '#fff' : '#002e6b')};
+	color: ${props => (props.secondary ? '#002e6b' : '#fff')};
 	font-family: inherit;
 	padding: 0.5rem 1rem;
 	margin-bottom: 1rem;
@@ -29,10 +29,10 @@ const StyledButton = styled.button<ButtonProps>`
 	transition: color 0.1s ease-out, border-color 0.1s ease-out,
 		background-color 0.1s ease-out;
 	&:hover {
-		background-color: #696284;
+		background-color: #012350;
 		${props => (props.secondary ? 'color: #fff' : null)}
 	}
 	&:active {
-		background-color: #504a65;
+		background-color: #002e6b;
 	}
 `
