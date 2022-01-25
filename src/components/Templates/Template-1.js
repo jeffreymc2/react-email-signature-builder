@@ -43,7 +43,6 @@ export const TemplateOne = () => {
 								</tr>
 								
 								<tr>
-									<td height="24"></td>
 								</tr>
 								{(data.socialFacebook ||
 									data.socialInstagram ||
