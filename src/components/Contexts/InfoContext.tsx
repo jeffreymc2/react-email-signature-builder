@@ -16,9 +16,9 @@ export const InfoContext = createContext<Partial<InfoContextProps>>({})
 
 export const InfoProvider = ({ children }: InfoProviderProps) => {
 	const [state, setState] = useState({
-		logo1:'https://perfectgame.s3.amazonaws.com/1_Perfect_Game_Stacked_Logo_Blue_01_a2affa3832.png',
-		logo2:'https://perfectgame.s3.amazonaws.com/pg_baseball_cfe0966728.png',
-		logo3:'https://perfectgame.s3.amazonaws.com/PG_Softball_2_33a241a3c0_cf1ef94b29_6ef9432bfe.png',
+		logo1:'https://res.cloudinary.com/jeffreymc/image/upload/v1643071136/Perfect%20Game/Logos/Email%20Signature/PG_Corporate_2_33a241a3c0_cf1ef94b29_6ef9432bfe_wpw9or.png',
+		logo2:'https://res.cloudinary.com/jeffreymc/image/upload/v1643071226/Perfect%20Game/Logos/Email%20Signature/PG_Baseball_2_33a241a3c0_cf1ef94b29_6ef9432bfe_ldd28d.png',
+		logo3:'https://res.cloudinary.com/jeffreymc/image/upload/v1643070500/Perfect%20Game/Logos/Email%20Signature/PG_Softball_2_33a241a3c0_cf1ef94b29_6ef9432bfe_t09ftg.png',
 
 		firstName: '',
 		lastName: '',
