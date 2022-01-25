@@ -563,7 +563,6 @@ export const TemplateTwo = () => {
 						>
 							<tbody>
 								<tr>
-									<td height="24"></td>
 								</tr>
 							</tbody>
 						</table>
